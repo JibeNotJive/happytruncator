@@ -24,6 +24,23 @@ flushdb
   
 _For absolution:_  
 flushall  
+
+#### RavenDB
+
+var collectionsToEradicate = new List<string>
+	{
+		"SomeDocument",
+		"AnotherDocument"
+	};
+
+foreach (var collection in collectionsToEradicate)
+{
+	store.DatabaseCommands.DeleteByIndex(
+		"Raven/DocumentsByEntityName",
+		new IndexQuery { Query = "Tag:" + collection },
+		allowStale: true
+		);
+}
   
     
 #### MySQL
