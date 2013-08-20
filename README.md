@@ -6,17 +6,17 @@ Helpful ways to truncate your datastores.
 
 
 #### SQL Server
-truncate table <tablename>;  
+truncate table [tablename];  
 
 _For logged truncation:_  
-delete from table <tablename>;  
+delete from table [tablename];  
   
   
 #### Postgres
-truncate table <tablename>;  
+truncate table "tablename";  
   
 _For logged truncation:_  
-delete from table <tablename>;  
+delete from table "tablename";  
   
   
 #### Redis
@@ -45,17 +45,17 @@ foreach (var collection in collectionsToEradicate)
   
     
 #### MySQL
+  
 sudo apt-get install -y libpq-dev postgresql-9.2 && sudo apt-get remove --purge mysql-server mysql-client mysql-common
 
 
   
 #### Oracle
-<ul>
-<li>Build swimming pool</li>
-<li>Fill it with cash money</li>
-<li>Use the pool of cash to buy Oracle software</li>
-<li>Load purchased software and supply data</li>
-<li>delete from table <tablename>;</li>
-<dl><dd>flashback table <tablename>; -- just kidding</dd></dl>
-<li>truncate table <tablename>; -- no kidding</li>
-</ul>
+
+1. Build swimming pool
+- Fill it with cash money
+- Use the pool of cash to buy Oracle software
+- Load purchased software and supply data
+- delete from table "tablename";
+- flashback table "tablename"; -- just kidding
+- truncate table "tablename"; -- no kidding
