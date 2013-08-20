@@ -25,6 +25,7 @@ flushdb
 _For absolution:_  
 flushall  
 
+
 #### RavenDB
 
 var collectionsToEradicate = new List<string>
