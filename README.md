@@ -76,6 +76,10 @@ sudo apt-get install -y libpq-dev postgresql-9.2 && sudo apt-get remove --purge 
 - flashback table "tablename"; -- just kidding
 - truncate table "tablename"; -- no kidding
 
+#### SQLite
+
+:facepunch: `rm -f data.db`
+
 #### Access
 
 :fire:
