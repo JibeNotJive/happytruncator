@@ -31,8 +31,18 @@ From a mongo shell: `db.collection.drop()`, where "collection" ~= "tablename"
 
 Usually unnecessary, as it defaults storage to /dev/null, and auto-shards across all nodes in the cluster.
 
-MongoDB is Web Scale.
-
+MongoDB is Web Scale.  
+  
+#### RethinkDB
+When you are serious:  
+r.table('tablename').delete({durability: 'hard'}).run()  
+When you are less serious:  
+r.table('tablename').delete({durability: 'soft'}).run()  
+When you are in a hurry:  
+r.db('dbname').tableDrop('tablename').run()  
+When you are OCD  (to be run before the hurry code):  
+r.table('tablename').indexDrop('indexname').run()  
+  
 #### RavenDB
     
     var collectionsToEradicate = new List<string>  
