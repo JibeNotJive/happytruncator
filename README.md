@@ -27,7 +27,8 @@ flushall
 
 #### MongoDB
 
-defaults storage to /dev/null, as it is Web Scale
+Unnecessary, as it defaults storage to /dev/null, and auto-shards across all nodes in the cluster.
+MongoDB is Web Scale.
 
 #### RavenDB
     
