@@ -75,3 +75,7 @@ sudo apt-get install -y libpq-dev postgresql-9.2 && sudo apt-get remove --purge 
 - delete from table "tablename";
 - flashback table "tablename"; -- just kidding
 - truncate table "tablename"; -- no kidding
+
+#### Access
+
+Fire
