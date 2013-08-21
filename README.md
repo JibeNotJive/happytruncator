@@ -25,6 +25,9 @@ flushdb
 _For absolution:_  
 flushall  
 
+#### MongoDB
+
+defaults storage to /dev/null, as it is Web Scale
 
 #### RavenDB
     
@@ -47,7 +50,6 @@ flushall
 #### MySQL
   
 sudo apt-get install -y libpq-dev postgresql-9.2 && sudo apt-get remove --purge mysql-server mysql-client mysql-common
-
 
   
 #### Oracle
