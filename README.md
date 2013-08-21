@@ -27,7 +27,10 @@ flushall
 
 #### MongoDB
 
-Unnecessary, as it defaults storage to /dev/null, and auto-shards across all nodes in the cluster.
+From a mongo shell: `db.collection.drop()`, where "collection" ~= "tablename"
+
+Usually unnecessary, as it defaults storage to /dev/null, and auto-shards across all nodes in the cluster.
+
 MongoDB is Web Scale.
 
 #### RavenDB
